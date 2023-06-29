@@ -17,7 +17,7 @@ credentials = json.load(open('config.json','r'))
 db_user = credentials['credentials']['db_user']
 db_passwd = credentials['credentials']['db_passwd']
 # Need to comment this line if running via docker-compose
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{db_user}:{db_passwd}@jpmcfg23.postgres.database.azure.com/postgres?sslmode=require'.format(db_user=db_user,db_passwd=db_passwd)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{db_user}:{db_passwd}@jpmccgf23.postgres.database.azure.com/postgres?sslmode=require'.format(db_user=db_user,db_passwd=db_passwd)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:2303sejal@localhost:3306/mydatabase'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_POOL_SIZE'] = 20
